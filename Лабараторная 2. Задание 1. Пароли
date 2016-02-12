@@ -1,0 +1,37 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _131_RPP_Yatsenko
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string x;
+            int i;
+            Console.Write("Введите пароль");
+            for (i = 0; i < 5; i++)
+            {
+
+                x = (Console.ReadLine());
+                if (x == "qwerty123")
+                {
+                    Console.Write("Колличество попыток: ");
+                    Console.WriteLine(i);
+                    Console.Write("Вы молодец!");
+                }
+                else
+                {
+                    Console.Write("Осталось ");
+                    Console.Write(6 - i);
+                    Console.Write("Попыток! ");
+                    Console.Write("Пароль неверен! Попробуйте еще раз!");
+                }
+            }
+            Console.ReadKey();
+        }
+    }
+}
