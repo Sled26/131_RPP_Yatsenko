@@ -1,0 +1,40 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int rost;
+            int x = 0;
+            int y;
+            for (int i = 0; ; i++)
+            {
+                Console.WriteLine("Введите рост ученика");
+                rost = Convert.ToInt32(Console.ReadLine());
+                if (rost > 0)
+                {
+                    Console.WriteLine(x = rost + x);
+                }
+                else
+                {
+                    Console.WriteLine("Расчет окончен");
+                }
+                if (x > 0)
+                {
+                    Console.WriteLine(y = x / i);
+                }
+                else
+                {
+                    Console.WriteLine("Детей нет");
+                }
+            }   
+
+        }
+    }
+}
