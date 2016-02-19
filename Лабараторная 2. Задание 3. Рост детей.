@@ -10,31 +10,19 @@ namespace ConsoleApplication3
     {
         static void Main(string[] args)
         {
-            int rost;
-            int x = 0;
-            int y;
-            for (int i = 0; ; i++)
+            int sum = 0;
+            int x;
+            Console.WriteLine("Введите количество учеников");
+            x = Convert.ToInt32(Console.ReadLine());
+            for (int i = 0; i < x; i++)
             {
                 Console.WriteLine("Введите рост ученика");
-                rost = Convert.ToInt32(Console.ReadLine());
-                if (rost > 0)
-                {
-                    Console.WriteLine(x = rost + x);
-                }
-                else
-                {
-                    Console.WriteLine("Расчет окончен");
-                }
-                if (x > 0)
-                {
-                    Console.WriteLine(y = x / i);
-                }
-                else
-                {
-                    Console.WriteLine("Детей нет");
-                }
-            }   
-
+                sum += Convert.ToInt32(Console.ReadLine());
+            }
+            
+                    Console.WriteLine("Всего учеников: " + x);
+                    Console.WriteLine("Средний рост учеников:" + sum/x);
+            Console.ReadKey();                                
         }
     }
 }
